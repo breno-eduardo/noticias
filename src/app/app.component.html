@@ -7,13 +7,27 @@
         </ion-header>
         <ion-content>
           <ion-list>
-            <ion-item routerLink="/paginas/inicio"><h2><strong>Login</strong></h2></ion-item>
-            <ion-item routerLink="/paginas/visualizar-cadastro">Visualizar Cadastros</ion-item>
-            <ion-item routerLink="/paginas/cadastrar">Cadastrar Usuários</ion-item>
-            <ion-item routerLink="/paginas/noticias">Visualizar Notícias</ion-item>
-            <ion-item routerLink="/paginas/cadastrar-noticia">Cadastrar Notícia</ion-item>
+
+              <ion-menu-toggle>
+                <ion-item routerLink="/paginas/inicio"><h2><strong>Login</strong></h2></ion-item>
+              </ion-menu-toggle>            
+            
+              <ion-menu-toggle>
+                  <ion-item routerLink="/paginas/visualizar-cadastro">Visualizar Cadastros</ion-item>
+              </ion-menu-toggle>
+              
+              <ion-menu-toggle>
+                  <ion-item routerLink="/paginas/noticias">Visualizar Notícias</ion-item>
+              </ion-menu-toggle>
+
+              <ion-menu-toggle>
+                  <ion-item routerLink="/paginas/cadastrar-noticia">Cadastrar Notícia</ion-item>
+              </ion-menu-toggle>   
+
           </ion-list>
         </ion-content>
       </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
+
+<ion-menu-toggle></ion-menu-toggle>
