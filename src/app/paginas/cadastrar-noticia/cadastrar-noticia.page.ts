@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cadastrar-noticia',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarNoticiaPage implements OnInit {
 
-  constructor() { }
+  titulo : string;
+  descricao : string;
+
+  constructor(private nav : NavController) { }
 
   ngOnInit() {
   }
 
+  enviar() {
+    console.log(this.titulo);
+    console.log(this.descricao);
+
+  
+  }
 }

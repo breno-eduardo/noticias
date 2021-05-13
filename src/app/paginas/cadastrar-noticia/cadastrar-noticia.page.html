@@ -1,9 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cadastrar-noticia</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header [translucent]="true">
+    <ion-toolbar>
+          <ion-buttons slot="start">
+             <ion-menu-button menu="custom"></ion-menu-button>
+          </ion-buttons>
+      <ion-title>
+        Cadastre sua noticia !
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
 
+    <ion-input text="text" placeholder="Título" [(ngModel)]="nome">Coloque o título: </ion-input>
+
+    <ion-input type="text" placeholder="Descrição" [(ngModel)]="descricao">Informe a notícia: </ion-input> 
+
+    
+    <ion-button  (click)="enviar()" routerLink="/paginas/visualizar-cadastro">
+      Clique aqui
+    </ion-button>
+   
 </ion-content>
